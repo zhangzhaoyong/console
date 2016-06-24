@@ -1,0 +1,8 @@
+#radius{ height: 260px;width: 260px;border:2px solid white;border-radius: 130px 130px 130px 130px;float:left;background:url(timg.jpg) no-repeat 0px 0px;background-size: 260px 260px;}
+#seconds{height:220px;width:2px;margin-left:130px;margin-top:20px;float:left;}
+#secondsTop{height:120px;width:2px;background: red;}
+#minutes{height:180px;width:4px;margin-left: 130px;margin-top:-200px;float:left;}
+#minutesTop{height:95px;width:4px;background: lightblue;}
+#hours{height:150px;width:6px;margin-left: 130px;margin-top:-185px;float:left;}
+#hoursTop{height:80px;width:6px;background: blue;}
+

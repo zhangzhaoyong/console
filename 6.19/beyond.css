@@ -1,0 +1,29 @@
+/*#body{background:url("u=3266078521,3626307098&fm=23&gp=0.jpg") no-repeat;background-size: 100% 100%;}*/
+#big{margin:50px auto;width:300px;height:500px;border:3px solid rosybrown;border-radius:6px;position:relative;background:rgba(180,130,190,0.5); }
+#bottom{width: 300px;height:50px;margin-top: 520px;}
+#circle{width:200px;height:200px;margin:30px auto;margin-left:50px;position:absolute;border-radius: 120px;border:2px solid rosybrown;overflow: hidden;}
+#img{width: 200px;height:200px;}
+#ly{width:300px;height:50px;background-color:goldenrod;font-weight:bold;position: absolute;top:310px;text-align:center;line-height:50px;font-size: 23px;color:royalblue;}
+#lyBottom{width:300px;height:30px;position: absolute;top:360px;text-align:center;line-height:30px;font-size: 20px;color:darkgreen;}
+#lyBottom1{width:300px;height:30px;position: absolute;top:390px;text-align:center;line-height:30px;font-size: 20px;color:darkgreen;}
+#lyBottom2{width:300px;height:30px;position: absolute;top:420px;text-align:center;line-height:30px;font-size: 20px;color:darkgreen;}
+#lyTop{width:300px;height:30px;position: absolute;top:280px;text-align:center;line-height:30px;font-size: 20px;color:darkgreen;}
+#lyTop1{width:300px;height:30px;position: absolute;top:250px;text-align:center;line-height:30px;font-size: 20px;color:darkgreen;}
+#control{width: 40px;height:40px;overflow:hidden;position:absolute;top:460px;left:130px;border-radius: 20px;}
+#startM{ width: 0;  height: 0;  border-top: 15px solid transparent;top:5px; position:absolute;left:5px;top:5px; border-left: 30px solid rosybrown;  border-bottom: 15px solid transparent;}
+#stopM{ width:30px;  height: 30px;  position:absolute;left:5px;top:45px;}
+#stopL{width:10px;  height: 30px;  position:absolute;background-color:rosybrown;}
+#stopZ{width:10px;  height: 30px;  position:absolute;left: 10px;}
+#stopR{width:10px;  height: 30px;  position:absolute;left: 20px;background-color:rosybrown;}
+@keyframes animTo0 {
+    from {
+        transform:  rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+#circle{
+    animation:animTo0 10s linear infinite;
+}

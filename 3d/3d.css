@@ -1,0 +1,10 @@
+.box{width:1000px;height:1000px;position: relative;}
+.box1{width:200px;height:200px;position:absolute;background:black;transform:rotateY(90deg) translateZ(-100px);}
+.box2{width:200px;height:200px;position:absolute;background:yellow;transform:rotateY(90deg) translateZ(100px);}
+.box3{width:200px;height:200px;position:absolute;background:blue;transform:rotateX(90deg) translateZ(100px);}
+.box4{width:200px;height:200px;position:absolute;background:black;transform:rotateX(90deg) translateZ(-100px);}
+.box5{width:200px;height:200px;position:absolute;background:yellow;transform:translateZ(-100px);}
+.box6{width:200px;height:200px;position:absolute;background:blue;transform:translateZ(100px);}
+
+
+

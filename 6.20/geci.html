@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+    <title>逐渐变色的文字</title>
+    <style>
+        .www_xker_com{
+            position:relative;
+            width:1000px;
+        }
+        .comm{
+            font-size:50px;
+            color:#ddd;
+            font-family:黑体;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .red{
+            color: #00ccff;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: 10;
+        };
+    </style>
+</head>
+<body>
+
+<div class="www_xker_com">
+    <strong id="xker_com" class="comm">新客网文字逐个变色显示的特效！</strong>
+</div>
+<script>
+    function getStyle( elem, name )
+    {
+        if (elem.style[name])
+            return elem.style[name];
+        else if (elem.currentStyle)
+            return elem.currentStyle[name];
+        else if (document.defaultView && document.defaultView.getComputedStyle) {
+            name = name.replace(/([A-Z])/g,"-$1");
+            name = name.toLowerCase();
+            var s = document.defaultView.getComputedStyle(elem,"");
+            return s && s.getPropertyValue(name);}
+        else return null;
+    }
+    (function(){
+        var lb = document.getElementById("xker_com"),
+                lt = lb.cloneNode(true),
+                i = 0,
+                sw = parseInt(getStyle(lb,'width'));
+        lt.setAttribute('id',lb.getAttribute('id')+'1');
+        lt.className = 'comm red';
+        lb.parentNode.appendChild(lt);
+        window.sliderFont = setInterval(function(){
+            parseInt(getStyle(lt,'width')) >= sw ? clearInterval(window.sliderFont) : lt.style['width'] = i++ + 'px';
+        },10);
+    })();
+</script>
+</body>
+</html></html>

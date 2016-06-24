@@ -1,0 +1,11 @@
+#body{margin:0;padding:0;}
+#right{width:500px;height:500px;position:relative;background-color:red;}
+#menu{width:80px;height:160px;position: absolute;display: none;}
+#a1{width:80px;height:40px;border:1px solid blue;display:block;background-color: darkorange;text-decoration: none;text-align: center;font-size: 30px;}
+#a2{width:80px;height:40px;border:1px solid blue;display:block;background-color: darkorange;text-decoration: none;text-align: center;font-size: 30px;}
+#a3{width:80px;height:40px;border:1px solid blue;display:block;background-color: darkorange;text-decoration: none;text-align: center;font-size: 27px;}
+#a4{width:80px;height:40px;border:1px solid blue;display:block;background-color: darkorange;text-decoration: none;text-align: center;font-size: 30px;}
+#a1:hover{background-color:rosybrown;}
+#a2:hover{background-color:rosybrown;}
+#a3:hover{background-color:rosybrown;}
+#a4:hover{background-color:rosybrown;}

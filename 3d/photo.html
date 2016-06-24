@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*.store{width:291px;height:220px;}*/
+        /*#big{position:relative;width:291px;height:220px;*/
+            /*animation: animTo180 2s ease 1;*/
+            /*animation-fill-mode: forwards;*/
+            /*transform-style:preserve-3d;*/
+        /*}*/
+        /*#img{position:absolute;width:291px;height:220px;transform: translateZ(0.5px);}*/
+        /*#img2{position:absolute;width:291px;height:220px;transform: translateZ(-0.5px);}*/
+        @keyframes animTo0 {
+            from {
+                transform: perspective(1000px) rotateY(180deg);
+            }
+            to {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+        }
+        @keyframes animTo180 {
+            from {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+
+            to {
+                transform: perspective(1000px) rotateY(180deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--<div class="store">-->
+        <!--<div id="big">-->
+            <!--<img id="img" src="1.png">-->
+            <!--<img id="img2" src="2.png">-->
+        <!--</div>-->
+    <!--</div>-->
+<script src="photo.js"></script>
+</body>
+</html>
